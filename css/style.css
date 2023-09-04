@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 35px;
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+
+.logo, .logo-adaptation {
+    width: 175px;
+    height: 45px;
+}
+
+.main-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.description {
+    margin-left: 30px;
+}
+
+.description > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 40px;
+}
+
+.description > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.description > button {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 10px 3px hsl(259, 32%, 37%);
+    font-size: 18px;
+}
+
+.description > button:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.socials, .socials-adaptation {
+    width: 150px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials img, .socials-adaptation img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 5px;
+    align-items: center;
+}
+
+.socials img:hover, .socials-adaptation img:hover {
+    filter: sepia(1) hue-rotate(250deg) saturate(100);
+}
+
+.hidden {
+    display: none;
+}
+
+/* =========== ADAPTATION ============ */
+
+@media screen and (max-width: 1280px) {
+    .description > h2 {
+        font-size: 38px;
+    }
+
+    .description > p {
+        font-size: 18px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .socials-adaptation {
+        display: flex;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1226px) {
+    .description > h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials-adaptation {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .description > h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .description {
+        text-align: center;
+    }
+
+    .socials-adaptation {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .description > button {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .main-conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        margin: 30px 0 0 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-adaptation {
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-right: auto;
+    }
+
+    .img-conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials-adaptation {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mockups-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .description > h2 {
+        font-size: 30px;
+    }
+
+    .description > button {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .description > h2 {
+        font-size: 24px;
+    }
+
+    .description > p {
+        font-size: 15px;
+    }
+
+    .socials-adaptation {
+        width: 120px;
+    }
+
+    .socials-adaptation img {
+        width: 30px;
+        height: 30px;
+    }
+}  
